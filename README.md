@@ -8,3 +8,5 @@ Flagship landing page for the SportPortal platform. Marketing hub, pricing, Stri
 - `district-sport` — carnivaltiming.com
 
 Push to main → auto-deploys via Vercel integration.
+
+<!-- deploy trigger 1776945453 -->
