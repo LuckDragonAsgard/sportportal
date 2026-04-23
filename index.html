@@ -121,6 +121,37 @@
   .footer-links { margin-bottom: 14px; }
   .footer-links a { margin: 0 10px; }
 
+  /* Setup explainer */
+  .setup-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  @media (min-width: 700px) { .setup-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1000px) { .setup-grid { grid-template-columns: repeat(3, 1fr); } }
+  .setup-card { background: #fff; border-radius: 14px; padding: 22px; border: 1px solid var(--border); position: relative; }
+  .setup-num {
+    position: absolute; top: -12px; left: 18px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--amber); color: var(--navy-dark);
+    font-weight: 900; font-size: 13px;
+    display: inline-flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 8px rgba(245,158,11,.35);
+  }
+  .setup-card h4 { font-size: 15px; font-weight: 800; margin-bottom: 6px; margin-top: 8px; color: var(--navy); }
+  .setup-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+  /* Privacy grid */
+  .privacy-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  @media (min-width: 700px) { .privacy-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1000px) { .privacy-grid { grid-template-columns: repeat(3, 1fr); } }
+  .privacy-card {
+    background: #fff; border-radius: 14px; padding: 22px;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--green);
+  }
+  .privacy-icon { font-size: 24px; margin-bottom: 10px; }
+  .privacy-card h4 { font-size: 15px; font-weight: 800; margin-bottom: 6px; color: var(--navy); }
+  .privacy-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+  .privacy-footer { margin-top: 24px; padding: 16px 20px; background: #f1f5f9; border-radius: 12px; font-size: 13px; color: #475569; text-align: center; }
+  .privacy-footer a { color: var(--blue); font-weight: 700; }
+
   /* Login modal */
   .login-modal {
     position: fixed; inset: 0; background: rgba(13,27,62,.9); display: none;
@@ -215,6 +246,90 @@
         <h4>Go live on carnival day</h4>
         <p>Timers on phones scan a QR to join. Results feed straight back to the scoreboard. Publish live to parents and to your district page.</p>
       </div>
+    </div>
+  </section>
+
+
+
+    <section id="setup-explainer">
+    <div class="section-label">What's in your setup</div>
+    <div class="section-title">We do the onboarding, you go live</div>
+    <p class="section-lead">The one-off setup fee covers every piece of work that turns a blank page into your school's real sport hub. It's the difference between an empty template and a site your parents actually use.</p>
+
+    <div class="setup-grid">
+      <div class="setup-card">
+        <div class="setup-num">1</div>
+        <h4>Build your page</h4>
+        <p>We create your school, district, division or region page on SchoolSportPortal &#8212; branded with your logo, colours and house names. Your parents can visit it immediately after setup.</p>
+      </div>
+      <div class="setup-card">
+        <div class="setup-num">2</div>
+        <h4>Configure your carnivals</h4>
+        <p>Athletics, swimming, cross country &#8212; whatever your school runs. We set your events, age groups, points system, pool size, venues. Every detail that makes your format unique.</p>
+      </div>
+      <div class="setup-card">
+        <div class="setup-num">3</div>
+        <h4>Upload your student roll</h4>
+        <p>Send us a CSV, a spreadsheet, or even a class list from Compass. Takes 20 minutes of your time. We import it and the platform auto-assigns students to age groups year after year.</p>
+      </div>
+      <div class="setup-card">
+        <div class="setup-num">4</div>
+        <h4>Find your historical records</h4>
+        <p>We comb your past carnival results, old newsletters, school website archives and district records &#8212; then load your wall of honour: fastest times, most wins, longest throws, famous alumni. Your history, surfaced.</p>
+      </div>
+      <div class="setup-card">
+        <div class="setup-num">5</div>
+        <h4>Train your staff</h4>
+        <p>30-minute walkthrough with your PE team. They leave confident to run the whole thing themselves &#8212; carnival day, results upload, parent comms.</p>
+      </div>
+      <div class="setup-card">
+        <div class="setup-num">6</div>
+        <h4>Sync to your district</h4>
+        <p>If your district is on SportPortal, your results automatically roll up. District finalists, division qualifiers, region representatives &#8212; all populated from your carnival data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="section-label">Student data privacy</div>
+    <div class="section-title">Built so schools and parents can trust it</div>
+    <p class="section-lead">We know student data is the sensitive piece. Here's exactly how it's protected &#8212; before you upload a single name.</p>
+
+    <div class="privacy-grid">
+      <div class="privacy-card">
+        <div class="privacy-icon">&#128274;</div>
+        <h4>Encrypted everywhere</h4>
+        <p>TLS 1.3 on every connection. Student records encrypted at rest with AES-256. No data ever travels or sits in plain text.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="privacy-icon">&#128584;</div>
+        <h4>First name + initial only, publicly</h4>
+        <p>Parents and other schools only ever see a student's first name and last-name initial &#8212; the standard convention used by School Sport bodies. Full names visible only to staff signed into your school.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="privacy-icon">&#127874;</div>
+        <h4>Birthdays never shown</h4>
+        <p>Date of birth is used once, to work out age groups. It's never displayed on any page, public or private. You can even provide just the birth year if you prefer.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="privacy-icon">&#127462;&#127482;</div>
+        <h4>Hosted in Australia</h4>
+        <p>All student data stored on Australian servers. Compliant with the Australian Privacy Principles and state Department of Education data-handling standards.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="privacy-icon">&#128228;</div>
+        <h4>You own the data</h4>
+        <p>Export everything as CSV any time. Delete everything any time. Your school has final say &#8212; we just host it for you. If you ever leave, you take your records with you.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="privacy-icon">&#128683;</div>
+        <h4>Never sold or shared</h4>
+        <p>Student data is not sold, rented, used for advertising, or shared with any third party. Ever. Not now, not after a funding round, not if we're acquired. It's in our Terms.</p>
+      </div>
+    </div>
+
+    <div class="privacy-footer">
+      Want a full privacy summary for your school council? <a href="mailto:pat_gallivan@hotmail.com?subject=SportPortal%20privacy%20summary%20-%20for%20school%20council">Email us and we'll send the one-pager.</a>
     </div>
   </section>
 
