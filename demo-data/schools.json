@@ -1,0 +1,151 @@
+{
+  "region": {
+    "name": "Central Coast Region",
+    "colour": "purple",
+    "badge": "State Sport Pathway",
+    "students": 8650
+  },
+  "divisions": [
+    {
+      "id": "eastbay",
+      "name": "Eastbay Division",
+      "colour": "green",
+      "students": 5240,
+      "live": true,
+      "districts": [
+        {
+          "id": "riverside",
+          "name": "Riverside District",
+          "students": 1820,
+          "live": true,
+          "schools": [
+            [
+              "Riverside Primary School",
+              "RPS",
+              420
+            ],
+            [
+              "Bayside Park PS",
+              "BPK",
+              380
+            ],
+            [
+              "Greenlawn PS",
+              "GLN",
+              310
+            ],
+            [
+              "Meadowbrook PS",
+              "MDB",
+              290
+            ],
+            [
+              "Harbour Heights PS",
+              "HHT",
+              250
+            ],
+            [
+              "Oak Valley PS",
+              "OAK",
+              170
+            ]
+          ]
+        },
+        {
+          "id": "harbourside",
+          "name": "Harbourside District",
+          "students": 1740,
+          "live": true,
+          "schools": [
+            [
+              "Harbour Academy",
+              "HAC",
+              380
+            ],
+            [
+              "Tidewater PS",
+              "TDW",
+              320
+            ],
+            [
+              "Saltbush PS",
+              "SLB",
+              290
+            ],
+            [
+              "Marina PS",
+              "MAR",
+              270
+            ],
+            [
+              "Pelican Point PS",
+              "PEL",
+              260
+            ],
+            [
+              "Kelpvale PS",
+              "KEL",
+              220
+            ]
+          ]
+        },
+        {
+          "id": "lighthouse",
+          "name": "Lighthouse District",
+          "students": 1680,
+          "live": true,
+          "schools": [
+            [
+              "Cape Primary",
+              "CAP",
+              410
+            ],
+            [
+              "Beacon PS",
+              "BCN",
+              350
+            ],
+            [
+              "Foreshore PS",
+              "FSH",
+              320
+            ],
+            [
+              "Lantern Hill PS",
+              "LNT",
+              310
+            ],
+            [
+              "Skerry Cove PS",
+              "SKR",
+              290
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seaside",
+      "name": "Seaside Division",
+      "colour": "green",
+      "students": 3410,
+      "live": false,
+      "districts": [
+        {
+          "id": "dunecrest",
+          "name": "Dunecrest District",
+          "students": 1820,
+          "live": false,
+          "schools": []
+        },
+        {
+          "id": "rockpool",
+          "name": "Rockpool District",
+          "students": 1590,
+          "live": false,
+          "schools": []
+        }
+      ]
+    }
+  ]
+}
